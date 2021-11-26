@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/726fa6f45a.js" crossorigin="anonymous"></script>
+	<script src="script.js" crossorigin="dda"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre&display=swap" rel="stylesheet">
+
+	<meta charset="UTF-8">
+	<title>DDaLandscaping - Residential and comercial maintenance</title>
+
+	
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			 <a href="index.html"><img src="img/logo.png" alt="">	</a>
+		</div>
+		<div id="navbar">
+		  <a class="active" href="index.html">Home</a>
+		  <a href="#gallery">Gallery</a>
+		  <a href="#contact">Contact Us</a>
+		</div>
+		<div class="principal">
+			<img src="img/principal.jpg" alt="" >
+			<div class="contenedor">
+					<h2>Welcome To DDaLadnscaping</h2>
+					<br>
+					<p>DdaLanscaping its a family operated company that focus on residential and comercial maintenance.</p>
+
+			</div>	
+			
+		</div>
+
+
+	</header>
+	<a name="gallery"></a>
+	<div class="galeria">
+		<div class="titulo"> <h2>Gallery</h2></div>
+  		
+  		<br>
+  		<div class="row"> 
+			  <div class="column">
+			   
+			    <img src="img/26653099_791253617725946_1092866589_o-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26613521_791253687725939_1001988589_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26613408_791253644392610_1581425473_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    
+			  </div>
+			  <div class="column">
+			    <img src="img/26654088_791253627725945_1292269523_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26653201_791253671059274_1648024550_o-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26653422_791253597725948_1134832302_o-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    
+			    
+			  </div>  
+			  <div class="column">
+			  	 <img src="img/26610772_791253637725944_49665988_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26610835_791253651059276_1142618579_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26654535_791253601059281_1825275465_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    
+			    
+			  </div>
+			  <div class="column">
+			    <img src="img/26613041_791253654392609_2137899585_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			 	<img src="img/26732837_791253667725941_1438638695_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    <img src="img/26613875_791253631059278_105403073_o.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)" class="modal-hover-opacity">
+			    
+			  </div>
+			</div>
+	</div>
+	
+	<div id="modal01" class="modal" onclick="this.style.display='none'">
+	  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	  <div class="modal-content">
+	    <img id="img01" style="max-width:100%">
+	  </div>
+	</div>
+
+	<a name="contact"></a>
+	<div class="contacto">
+			
+		<div class="container">
+			<h2>Contact Us</h2>	
+			  <form action="enviar_email.php" method="post"  name="formulario" >
+
+			    <label for="name">Name</label>
+			    <input type="text" id="name" name="name" >
+
+			     <label for="phone">Phone</label>
+  				<input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+				
+				<label for="email">Email</label>
+  				<input type="email" id="email" name="email">
+
+
+			    <label for="message">Message</label>
+			    <textarea id="message" name="message"  style="height:200px"></textarea>
+
+			    <input type="submit" value="Submit">
+
+			  </form>
+			</div>
+		
+	</div>
+	
+	<footer>
+		<div class="copy">
+			<i class="far fa-copyright"></i><p>Copyright (c) 2018 <strong><em>ddalandscaping.com</em></strong> | All Rights Reserved.</p>
+		</div>
+		<div class="phone">
+			<i class="fas fa-phone"></i><p>408-603-4467</p> 
+			
+		</div>
+		<div class="mail">
+			<i class="fas fa-envelope"></i> <p>gomezalonso@ddalandscaping.com</p>  
+			
+		</div>
+		
+	</footer>
+</body>
+</html>
